@@ -1,0 +1,44 @@
+.alfa-slab-one-regular {
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+.pretendard-jp {
+  font-family: 'PretendardJPVariable';
+  src: url('fonts/PretendardJPVariable.ttf') format('truetype');
+}
+
+.main-content {
+  background-color: black;
+  height: 100%;
+  min-height: fit-content;
+  width: 80vw;
+  min-width: 1024px;
+  margin: auto;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.menu-title {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#app {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
