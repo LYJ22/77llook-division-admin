@@ -159,9 +159,6 @@ onMounted(async () => {
       :modules="modules"
     />
   </div>
-  <div style="background-color: white; width: 100%; height: 200px">
-    {{ content }}
-  </div>
   <Footer />
 </template>
 
