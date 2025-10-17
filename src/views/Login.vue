@@ -101,13 +101,6 @@ input {
   padding: 12px;
   margin: 10px;
   border: 1px solid #1a00ff;
-
-  @media (max-width: 767px) {
-    width: 160px;
-  }
-  @media (max-width: 479px) {
-    width: 120px;
-  }
 }
 button {
   width: 120px;

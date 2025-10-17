@@ -11,7 +11,7 @@ const moveToCreatePost = () => {
 
 <template>
   <div id="home-wrapper">
-    <div style="display: flex; justify-content: space-between">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 8px">
       <h1 class="alfa-slab-one-regular menu-title">gallery</h1>
       <StyledButton :imgURL="addImg" text="추가" :clickAction="moveToCreatePost" />
     </div>

@@ -35,9 +35,14 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    margin: 0 4px;
     p {
       display: none;
     }
+  }
+  @media (max-width: 479px) {
+    width: 32px;
+    height: 32px;
   }
 }
 </style>

@@ -95,6 +95,18 @@ li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 8px;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 100%;
+    letter-spacing: 0;
+  }
 }
 .button-wrapper {
   display: flex;

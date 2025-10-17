@@ -143,6 +143,7 @@ onMounted(async () => {
   <div class="textarea-wrapper">
     <h2>설명:</h2>
     <textarea
+      @input="autoResize"
       maxlength="200"
       placeholder="부제/설명을 입력하세요(선택, 최대200자)"
       v-model="info"
@@ -182,6 +183,15 @@ button {
   width: 80px;
   border-radius: 35px;
   font-size: 16px;
+
+  @media (max-width: 767px) {
+    width: 64px;
+    font-size: 12px;
+  }
+  @media (max-width: 479px) {
+    width: 48px;
+    font-size: 10px;
+  }
 }
 .textarea-wrapper {
   width: 90%;
@@ -192,17 +202,24 @@ button {
   h2 {
     width: fit-content;
     margin: 8px 8px 0 0;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+    @media (max-width: 479px) {
+      font-size: 14px;
+    }
   }
   input {
     flex-grow: 1;
     margin-top: 8px;
     padding: 0 4px;
+    min-height: 24px;
   }
   textarea {
     flex-grow: 1;
     margin-top: 8px;
     padding: 4px;
-    height: 56px;
+    min-height: 56px;
   }
 }
 </style>

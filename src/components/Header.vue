@@ -38,6 +38,10 @@ function moveToMain() {
   @media (max-width: 767px) {
     width: 100%;
     min-width: 0;
+    height: 100px;
+  }
+  @media (max-width: 479px) {
+    height: 80px;
   }
 }
 .title-wrapper {
@@ -83,10 +87,10 @@ button {
   margin-right: 20px;
 
   @media (max-width: 767px) {
-    font-size: 12px;
+    font-size: 14px;
   }
   @media (max-width: 479px) {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
 </style>
