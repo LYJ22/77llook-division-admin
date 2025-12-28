@@ -14,6 +14,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@netlify/functions": "^5.1.2",
     "@supabase/supabase-js": "^2.58.0",
     "@vueup/vue-quill": "^1.2.0",
     "base64-arraybuffer": "^1.0.2",

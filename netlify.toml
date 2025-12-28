@@ -1,3 +1,6 @@
+[functions."keep-alive-functions"]
+    schedule = "0 0 */6 * *" 
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
