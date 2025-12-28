@@ -1,4 +1,4 @@
-[functions."keep-alive-functions"]
+[functions."keep-alive-function"]
     schedule = "0 0 */6 * *" 
 
 [[redirects]]
