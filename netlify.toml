@@ -1,5 +1,5 @@
 [functions."keep-alive-function"]
-    schedule = "0 0 */6 * *" 
+    schedule = "0 0 */5 * *" 
 
 [[redirects]]
   from = "/*"
