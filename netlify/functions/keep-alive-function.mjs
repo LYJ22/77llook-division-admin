@@ -1,9 +1,9 @@
 export default async (req) => {
   try {
-    const response = await fetch(`${import.meta.env.SUPABASE_URL}/rest/v1/`, {
+    const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/rest/v1/`, {
       headers: {
-        apikey: import.meta.env.SUPABASE_ANON_KEY,
-        Authorization: `Bearer ${import.meta.env.SUPABASE_ANON_KEY}`,
+        apikey: import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
+        Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
       },
     })
 
@@ -27,8 +27,4 @@ export default async (req) => {
       }),
     }
   }
-
-  // const { next_run } = await req.json()
-
-  // console.log("Received event! Next invocation at:", next_run)
 }
