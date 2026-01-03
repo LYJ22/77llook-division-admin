@@ -13,6 +13,6 @@ export default async (req) => {
 
     return new Response('Ok')
   } catch (error) {
-    return new Error(error)
+    return new Response(error)
   }
 }
