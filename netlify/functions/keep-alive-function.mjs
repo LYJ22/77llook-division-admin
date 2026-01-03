@@ -11,20 +11,8 @@ export default async (req) => {
       throw new Error(`Supabase ping failed: ${response.status}`)
     }
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        status: 'success',
-        timestamp: new Date().toISOString(),
-      }),
-    }
+    return new Response('Ok')
   } catch (error) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({
-        status: 'error',
-        message: error.message,
-      }),
-    }
+    return new Error(error)
   }
 }
